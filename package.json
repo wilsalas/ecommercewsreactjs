@@ -1,0 +1,45 @@
+{
+  "name": "ecommercewsreactjs",
+  "version": "1.0.0",
+  "main": "./src/index.tsx",
+  "scripts": {
+    "start:dev": "webpack serve --mode development --config webpack.config.mjs",
+    "build": "rimraf ./dist && webpack --mode production --config webpack.config.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/node": "^22.9.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "dotenv": "^16.4.5",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.3",
+    "postcss-loader": "^8.1.1",
+    "prettier": "^3.3.3",
+    "raw-loader": "^4.0.2",
+    "rimraf": "^6.0.1",
+    "sass-loader": "^16.0.3",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "tsconfig-paths-webpack-plugin": "^4.2.0",
+    "typescript": "^5.7.2",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1"
+  }
+}

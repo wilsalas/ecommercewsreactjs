@@ -1,0 +1,7 @@
+{
+  "name": "ecommercewsreactjs",
+  "appSelector": "root",
+  "dev": {
+    "port": 3000
+  }
+}
