@@ -15,6 +15,7 @@ const commonConfig = {
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
+    publicPath: '/',
     path: path.resolve(__dirname, './dist'),
   },
   module: {
@@ -89,9 +90,7 @@ const commonConfig = {
         appSelector: appConfig.appSelector,
       },
     }),
-    new webpack.DefinePlugin({
-      'process.env': JSON.stringify(process.env),
-    }),
+    new webpack.DefinePlugin({ 'process.env': JSON.stringify(process.env) }),
   ],
 };
 
